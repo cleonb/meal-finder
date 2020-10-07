@@ -2,11 +2,12 @@
   box-sizing: border-box;
 }
 
+
 body {
   background-image: url(./img/meal.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  background-attachment: fixed; 
   color: #fff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
@@ -146,10 +147,6 @@ input[type='text'] {
   }
 }
 @media (max-width: 700px) {
-  body{
-    background-size: cover;
-  }
-  
   .meals {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -159,15 +156,11 @@ input[type='text'] {
     width: 200px;
   }
 }
-@media (max-width: 660px) {
+@media (max-height: 660px) {
   body{
-    background-size: cover;
-  }
+    background-size: cover;  
 }
-@media (max-width: 500px) {
-  body{
-    background-size: cover;
-  }
+@media (max-width: 450px) {
 
   input[type='text'] {
     width: 100%;
