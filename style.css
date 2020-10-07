@@ -6,6 +6,7 @@ body {
   background-image: url(./img/meal.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
   color: #fff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
@@ -137,6 +138,9 @@ input[type='text'] {
 }
 
 @media (max-width: 800px) {
+  body{
+    background-size: cover;
+  }
   .meals {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -144,7 +148,6 @@ input[type='text'] {
 @media (max-width: 700px) {
   body{
     background-size: cover;
-    height: 100vh;
   }
   
   .meals {
@@ -156,7 +159,16 @@ input[type='text'] {
     width: 200px;
   }
 }
+@media (max-width: 660px) {
+  body{
+    background-size: cover;
+  }
+}
 @media (max-width: 500px) {
+  body{
+    background-size: cover;
+  }
+
   input[type='text'] {
     width: 100%;
   }
