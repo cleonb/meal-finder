@@ -154,7 +154,10 @@ input[type='text'] {
 }
 @media (max-height: 500px) {
   body{
-    background-size: cover;  
+    background-size: cover; 
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover; 
 }
 }
 @media (max-width: 800px) {
